@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-const {set, Controller} = Ember;
+const { set, Controller } = Ember;
 
 export default Controller.extend({
     selected: '3',
@@ -35,6 +35,21 @@ export default Controller.extend({
         },
         {
             name: '10'
+        },
+        {
+            name: '11'
+        },
+        {
+            name: '12'
+        },
+        {
+            name: '13'
+        },
+        {
+            name: '14'
+        },
+        {
+            name: '15'
         }
     ],
     actions: {

@@ -1,8 +1,33 @@
-{{select-box
-    selectId="state_select"
+<label for="state-select">Inline Custom Select</label>
+{{unified-select
+    selectId="state-select"
+    selected=selected
     options=statesArray
     onchange=(action "setSelectBoxValue" selected)
     labelId="state_select_label"
     nativeSelect=false
+    label="labelText"
+}}
+
+<label for="state-select2">Modal Custom Select (better for small viewports)</label>
+{{unified-select
+    label="Modal Custom Select (better for small viewports)"
+    selectId="state-select2"
+    selected=selected
+    options=statesArray
+    onchange=(action "setSelectBoxValue" selected)
+    labelId="state_select_label"
+    showInline=false
+    label="labelText"
+}}
+
+<label for="state-select3">Native Select</label>
+{{unified-select
+    selectId="state-select3"
+    selected=selected
+    options=statesArray
+    onchange=(action "setSelectBoxValue" selected)
+    labelId="state_select_label"
+    nativeSelect=true
     label="labelText"
 }}

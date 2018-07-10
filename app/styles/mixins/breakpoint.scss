@@ -8,13 +8,13 @@ $breakpoints: (
 
 
 @mixin breakpoint($size) {
-	$value: 1 !default;
-	@if type-of($size) ==  'string'{
-		$value: map-get($breakpoints, $size);
-	} @else {
-		$value: $size;
-	}	
-	@media screen and (max-width: $value ) {
-		@content;
-	}
+    $value: 1 !default;
+    @if type-of($size) ==  'string'{
+        $value: map-get($breakpoints, $size);
+    } @else {
+        $value: $size;
+    }	
+    @media screen and (max-width: $value ) {
+        @content;
+    }
 }
