@@ -1,0 +1,527 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"renamed"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/templates/application.hbs",
+			"settings":
+			{
+				"buffer_size": 919,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/application.js",
+			"settings":
+			{
+				"buffer_size": 937,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 1299,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 45 files for \"select-box\"\n\nC:\\Users\\Abdul Hamid\\Documents\\Projects\\Ember\\ember-unified-select-demo\\app\\styles\\app.scss:\n    1  @import 'mixins/breakpoint.scss';\n    2: @import 'components/select-box.scss';\n\nC:\\Users\\Abdul Hamid\\Documents\\Projects\\Ember\\ember-unified-select-demo\\app\\styles\\components\\select-box.scss:\n    1: .select-box {\n    2:   .select-box__wrapper {\n    3      position: relative;\n    4      text-transform: capitalize;\n    .\n   10      padding-top: 1.14286rem;\n   11    }\n   12:   .select-box__dropdown {\n   13      cursor: pointer;\n   14      position: relative;\n   ..\n   27      transition: .5s all ease-in;\n   28    }\n   29:   .select-box__dropdown-container {\n   30      position: absolute;\n   31      width: 100%;\n   ..\n   46          top: 1.5rem;\n   47          transform: translate(-50%, 0);\n   48:         .select-box__dropdown-list a {\n   49            display: none;\n   50            &.filtered {\n   ..\n   60        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);\n   61        margin-bottom: 3rem;\n   62:       .select-box__dropdown-list {\n   63          display: block;\n   64          margin: 0;\n   ..\n   73      }\n   74    }\n   75:   .select-box__dropdown-header {\n   76      position: fixed;\n   77      padding: .5rem .75rem .75rem;\n   ..\n   83      text-align: center;\n   84      border-bottom: 1px solid #eeeeee;\n   85:     .select-box_dropdown-label {\n   86        padding-top: .25rem;\n   87      }\n   ..\n  101      }\n  102    }\n  103:   .select-box__dropdown-list {\n  104      display: none;\n  105      list-style: none;\n\n10 matches across 2 files\n\n\nSearching 45 files for \"select-box\"\n\nC:\\Users\\Abdul Hamid\\Documents\\Projects\\Ember\\ember-unified-select-demo\\app\\styles\\components\\unified-select.scss:\n   83      text-align: center;\n   84      border-bottom: 1px solid #eeeeee;\n   85:     .select-box_dropdown-label {\n   86        padding-top: .25rem;\n   87      }\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 1964,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "app/styles/mixins/breakpoint.scss",
+			"settings":
+			{
+				"buffer_size": 360,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/styles/app.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 900.0,
+		"last_filter": "ke",
+		"selected_items":
+		[
+			[
+				"ke",
+				"Preferences: Key Bindings"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"pac",
+				"Install Package Control"
+			]
+		],
+		"width": 1061.0
+	},
+	"console":
+	{
+		"height": 301.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Abdul Hamid/Documents/Projects/Ember/ember-unified-select-demo",
+		"/C/Users/Abdul Hamid/Documents/Projects/Ember/ember-unified-select-demo/app",
+		"/C/Users/Abdul Hamid/Documents/Projects/Ember/ember-unified-select-demo/app/components",
+		"/C/Users/Abdul Hamid/Documents/Projects/Ember/ember-unified-select-demo/app/controllers",
+		"/C/Users/Abdul Hamid/Documents/Projects/Ember/ember-unified-select-demo/app/routes",
+		"/C/Users/Abdul Hamid/Documents/Projects/Ember/ember-unified-select-demo/app/styles",
+		"/C/Users/Abdul Hamid/Documents/Projects/Ember/ember-unified-select-demo/app/styles/mixins",
+		"/C/Users/Abdul Hamid/Documents/Projects/Ember/ember-unified-select-demo/app/templates",
+		"/C/Users/Abdul Hamid/Documents/Projects/Ember/ember-unified-select-demo/app/templates/components"
+	],
+	"file_history":
+	[
+		"/C/Users/Abdul Hamid/Documents/Projects/Ember/ember-unified-select-demo/app/styles/components/unified-select.scss",
+		"/C/Users/Abdul Hamid/Documents/Projects/Ember/ember-unified-select/app/templates/components/unified-select.js",
+		"/C/Users/Abdul Hamid/Documents/Projects/Ember/ember-unified-select/app/components/unified-select.js",
+		"/C/Users/Abdul Hamid/AppData/Roaming/Sublime Text 3/Packages/Color Scheme - Default/Monokai.tmTheme"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 279.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"import Ember from 'ember';\n\nconst {set, Controller} = Ember;\n\nexport default Controller.extend({\n    selected: '3',\n    selectBoxValue: '3',\n    statesArray: [\n        {\n            name: '1'\n        },\n        {\n            name: '2'\n        },\n        {\n            name: '3'\n        },\n        {\n            name: '4'\n        },\n        {\n            name: '5'\n        },\n        {\n            name: '6'\n        },\n        {\n            name: '7'\n        },\n        {\n            name: '8'\n        },\n        {\n            name: '9'\n        },\n        {\n            name: '10'\n        },\n        {\n            name: '11'\n        },\n        {\n            name: '12'\n        },\n        {\n            name: '13'\n        },\n        {\n            name: '14'\n        },\n        {\n            name: '15'\n        }\n    ],\n    actions: {\n        setSelectBoxValue(value) {\n            set(this, 'selectBoxValue', value);\n        }\n    }\n});\n",
+			"dropdown-li",
+			"drop",
+			"}\n",
+			"filt",
+			"\n            name: '6'\n        },\n        {\n            name: '7'\n        },\n        {\n            name: '8'\n        },\n        {\n            name: '9'\n        },\n        {\n            name: '10'\n        }",
+			"\n        {\n            name: '10'\n        }",
+			"select-box"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/templates/application.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 919,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/application.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 937,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								117,
+								117
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								494,
+								523
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1964,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										198,
+										208
+									],
+									[
+										336,
+										346
+									],
+									[
+										359,
+										369
+									],
+									[
+										514,
+										524
+									],
+									[
+										663,
+										673
+									],
+									[
+										847,
+										857
+									],
+									[
+										1085,
+										1095
+									],
+									[
+										1210,
+										1220
+									],
+									[
+										1403,
+										1413
+									],
+									[
+										1518,
+										1528
+									],
+									[
+										1870,
+										1880
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1879,
+								1879
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/styles/mixins/breakpoint.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								313,
+								316
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/styles/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 99.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ember-unified-select-demo.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"package.json"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"in",
+				"index.js"
+			],
+			[
+				"slee",
+				"app\\styles\\components\\select-box.scss"
+			],
+			[
+				"sele",
+				"addon\\components\\select-box.js"
+			],
+			[
+				"pack",
+				"package.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 1125.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 855.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 598.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,33 +1,131 @@
-<label for="state-select">Inline Custom Select</label>
-{{unified-select
-    selectId="state-select"
-    selected=selected
-    options=statesArray
-    onchange=(action "setSelectBoxValue" selected)
-    labelId="state_select_label"
-    nativeSelect=false
-    label="labelText"
-}}
+<main>
+    <h1>Ember Unified Select</h1>
 
-<label for="state-select2">Modal Custom Select (better for small viewports)</label>
-{{unified-select
-    label="Modal Custom Select (better for small viewports)"
-    selectId="state-select2"
-    selected=selected
-    options=statesArray
-    onchange=(action "setSelectBoxValue" selected)
-    labelId="state_select_label"
-    showInline=false
-    label="labelText"
-}}
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>Ember Unified Select is an addon meant to provide a modern, customizeable select replacement.  It aims to be WCAG 2.0 compliant and offers the keyboard functionality provided by native select elements.</p>
+        <p>The addon ships with three key elements, the unified-select component, the is-equal helper, and the clickElsewhere mixin.  Is-equal is a basic Ember helper used to compare two values. clickElsewhere allows functions to be called when a click event is fired outside of the scope of the element that extends it.  It is used in unified-select to close the dropdown on off clicks.</p>
+        <p>Ember Unified Select has three primary displays: <a href="#inline_section">custom styled inline</a>, <a href="#modal_section">custom styled modal</a>, and <a href="#native_section">native select</a>.  Both custom sections mimic native select functionality and all styles are namespaced to the component to prevent style leakage.</p>
+    </section>
 
-<label for="state-select3">Native Select</label>
-{{unified-select
-    selectId="state-select3"
-    selected=selected
-    options=statesArray
-    onchange=(action "setSelectBoxValue" selected)
-    labelId="state_select_label"
-    nativeSelect=true
-    label="labelText"
-}}
+    <section id="properties">
+        <h2>Properties</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>selectId</code></td>
+                    <td>This is the <code>id</code> bound to the select/dropdown trigger.  This is set to allow binding to an external <code>label</code> element.</td>
+                </tr>
+                <tr>
+                    <td><code>selected</code></td>
+                    <td>This is used to indicate the selected value of the dropdown.</td>
+                </tr>
+                <tr>
+                    <td><code>options</code></td>
+                    <td>This is the array of options used to populate the dropdown list. It accepts both string arrays and object arrays; if object arrays are used <code>valueKey</code> and <code>displayKey</code> should be specified.</td>
+                </tr>
+                <tr>
+                    <td><code>valueKey</code></td>
+                    <td>For object option arrays, this is the key in each object that corresponds to an object's value.</td>
+                </tr>
+                <tr>
+                    <td><code>displayKey</code></td>
+                    <td>For object option arrays, this is the key in each object that corresponds to an object's display.</td>
+                </tr>
+                <tr>
+                    <td><code>onchange</code></td>
+                    <td>This is the closure action passed to handle the value change. A common usage would be to leverage the <code>mut</code> helper.  <br><strong>This is a required property and an assertion error will be thrown if it is not defined.</strong></td>
+                </tr>
+                <tr>
+                    <td><code>showInline</code></td>
+                    <td>This is a boolean value to indicate whether the options appear inline with the field.  This value defaults to <code>true</code>. It is recommended that <a href="https://github.com/freshbooks/ember-responsive" target="_blank">ember-responsive</a> be used for this assignment.  The falsy value of <code>showInline</code> was originally meant as a mobile view.</td>
+                </tr>
+                <tr>
+                    <td><code>nativeSelect</code></td>
+                    <td>This is a boolean value to indicate whether or not a native select is used.  When set to <code>true</code>, <a href="https://github.com/q2ebanking/ember-select-light" target="_blank">ember-select-light</a> is used. This value defaults to <code>false</code>.</td>
+                </tr>
+                <tr>
+                    <td><code>label</code></td>
+                    <td>The text value of the <code>label</code> element used as a header for the modal view of the dropdown.</td>
+                </tr>
+                <tr>
+                    <td><code>disabled</code></td>
+                    <td>A boolean value that prevents user initiated changes to the dropdown.</td>
+                </tr>
+                <tr>
+                    <td><code>placeholder</code></td>
+                    <td>Placeholder text for the dropdown field.</td>
+                </tr>
+                <tr>
+                    <td><code>filterLabel</code></td>
+                    <td>ext string used as an <code>aria-label</code> for the button used to show the filter input when in a modal view with more than 10 options.</td>
+                </tr>
+                <tr>
+                    <td><code>clearLabel</code></td>
+                    <td>Text string used as an <code>aria-label</code> for the button that appears to clear a search query when filtering in a modal view.</td>
+                </tr>
+                <tr>
+                    <td><code>emptyFilterText</code></td>
+                    <td>Text string that appears under a search icon when no options are available after filtering.</td>
+                </tr>
+                {{!-- <tr>
+                    <td><code></code></td>
+                    <td></td>
+                </tr> --}}
+            </tbody>
+        </table>
+    </section>
+    <section id="inline_section">
+        <h2>Inline Custom Select</h2>
+        <p>The default configuration of the <code>unified-select</code> component.</p>
+        <label for="state-select">Inline Custom Select</label>
+        {{unified-select
+            label="State"
+            selectId="state-select"
+            selected=selected
+            options=statesArray
+            valueKey="abbreviation"
+            displayKey="name"
+            onchange=(action (mut selected))
+            nativeSelect=false
+        }}
+    </section>
+    
+    <section id="modal_section">
+        <h2>Modal Custom Select</h2>
+        <p>Originally developed as the mobile interface. <code>showInline</code> is set to false to achieve this UI.</p>
+        <label for="state-select2">State</label>
+        {{unified-select
+            label="State"
+            selectId="state-select2"
+            selected=selected
+            options=statesArray
+            valueKey="abbreviation"
+            displayKey="name"
+            onchange=(action (mut selected))
+            showInline=false
+        }}
+    </section>
+    
+    <section id="native_section">
+        <h2>Native Select</h2>
+        <p>A native select is achieved by setting <code>nativeSelect</code> to true. <code>ember-unified-select</code> is leveraged here.</p>
+        <label for="state-select3">State</label>
+        {{unified-select
+            selectId="state-select3"
+            selected=selected
+            options=statesArray
+            valueKey="abbreviation"
+            displayKey="name"
+            onchange=(action (mut selected))
+            nativeSelect=true
+            label="State"
+        }}
+    </section>
+</main>
