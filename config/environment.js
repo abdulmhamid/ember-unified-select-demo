@@ -5,7 +5,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'ember-unified-select-demo',
     environment,
-    rootURL: '/',
+    rootURL: '/ember-unified-select-demo/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
