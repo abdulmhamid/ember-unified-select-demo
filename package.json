@@ -11,7 +11,8 @@
   },
   "repository": "",
   "scripts": {
-    "build": "ember build",
+    "build:dev": "ember build",
+    "build": "ember build --environment production &&  rm -rf docs/* && mv dist/* ./docs",
     "start": "ember server",
     "test": "ember test"
   },
